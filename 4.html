@@ -1,0 +1,22 @@
+<html>
+
+    <h2>You Can Calculate Volume Here!</h2>
+    <p>all values are in metre</p>
+    
+    <body>
+        Enter the Length:<input id="a">
+        Enter the Width:<input id="b">
+        Enter the Height:<input id="c">
+        <button onclick="volumeCal()">Calculate Volume</button>
+        <h1 id="cal"></h1>
+        <script>
+          function volumeCal(){
+          var length,width,height;
+          length=Number(document.getElementById("a").value);
+          width=Number(document.getElementById("b").value);
+          height=Number(document.getElementById("c").value);
+          document.getElementById('cal').innerHTML = "The Volume is " + length * width * height + "m³";       
+          }
+        </script>
+    </body>
+</html>

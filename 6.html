@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <li style="list-style-type:none;" id="course1"></li>
+        <li style="list-style-type:none;" id="course2"></li>
+        <li style="list-style-type:none;" id="course3"></li>
+        <li style="list-style-type:none;" id="course4"></li>
+        <script>
+            const course = {
+                courseName:"BIT",
+                courseFee:"Rs 150 000",
+                startDate:"12.06.2018",
+                center:"Our Office"
+            }
+            document.getElementById("course1").innerHTML = "Course Name:" + course.courseName ;
+            document.getElementById("course2").innerHTML = "Fee:" + course.courseFee ;
+            document.getElementById("course3").innerHTML = "Start Date:" + course.startDate ;
+            document.getElementById("course4").innerHTML = "Center:" + course.center ;
+        </script>
+    </body>
+</html>

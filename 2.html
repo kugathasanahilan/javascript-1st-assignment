@@ -1,0 +1,50 @@
+<html>
+  <body>
+
+    Enter the Number:<input id="a">
+    Enter the Number:<input id="b">
+
+    <button onclick="addNum();multiNum();subtractNum();divideNum();">Click Me!</button>
+    <br>
+    Added Value:
+    <h2 style="color: dodgerblue;" id="add"></h2>
+    <br>
+    Multipled Value:
+    <h2 style="color: maroon;" id="multiple"></h2>
+    <br>
+    Substracted Value:
+    <h2 style="color:blueviolet" id="substract"></h2>
+    <br>
+    Divided Value:
+    <h2 style="color: limegreen;" id="divide"></h2>
+    
+      <script>
+          
+          function addNum(){
+          var num1,num2;
+          num1=Number(document.getElementById("a").value);
+          num2=Number(document.getElementById("b").value);
+          document.getElementById('add').innerHTML =  num1 + num2;       
+          }
+
+          function multiNum(){
+          var num1,num2;
+          num1=Number(document.getElementById("a").value);
+          num2=Number(document.getElementById("b").value);
+          document.getElementById('multiple').innerHTML = num1 * num2;  
+          }
+          function subtractNum(){
+          var num1,num2;
+          num1=Number(document.getElementById("a").value);
+          num2=Number(document.getElementById("b").value);
+          document.getElementById('substract').innerHTML = num1 - num2; 
+          }
+          function divideNum(){
+         var num1,num2;
+          num1=Number(document.getElementById("a").value);
+          num2=Number(document.getElementById("b").value);
+          document.getElementById('divide').innerHTML = num1/num2; 
+          }
+      </script>
+  </body>  
+</html>
